@@ -11,9 +11,10 @@ private:
   uint16_t _port;
   void accept();
 public:
-  EthernetServer(uint16_t);
+  EthernetServer(uint16_t port);
   EthernetClient available();
-  virtual void begin();
+  //void begin(uint16_t port = 0);
+  void begin();
   virtual size_t write(uint8_t);
   virtual size_t write(const uint8_t *buf, size_t size);
   using Print::write;

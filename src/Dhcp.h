@@ -93,7 +93,8 @@ enum
 	arpCacheTimeout		=	35,
 	ethernetEncapsulation	=	36,
 	tcpDefaultTTL		=	37,
-	tcpKeepaliveInterval	=	38,
+	tcpKeep
+	Interval	=	38,
 	tcpKeepaliveGarbage	=	39,
 	nisDomainName		=	40,
 	nisServers		=	41,

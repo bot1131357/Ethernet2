@@ -13,8 +13,10 @@ EthernetServer::EthernetServer(uint16_t port)
   _port = port;
 }
 
+//void EthernetServer::begin(uint16_t port)
 void EthernetServer::begin()
 {
+  //if(port) _port = port;
   for (int sock = 0; sock < MAX_SOCK_NUM; sock++) {
     EthernetClient client(sock);
     if (client.status() == SnSR::CLOSED) {

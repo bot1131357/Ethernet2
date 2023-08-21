@@ -151,6 +151,10 @@ uint8_t EthernetClient::connected() {
     (s == SnSR::CLOSE_WAIT && !available()));
 }
 
+uint8_t EthernetClient::getSocket() {
+    return _sock;
+}
+
 uint8_t EthernetClient::status() {
   if (_sock == MAX_SOCK_NUM) return SnSR::CLOSED;
   return w5500.readSnSR(_sock);
